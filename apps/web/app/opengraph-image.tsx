@@ -31,7 +31,7 @@ export default async function ImageOG() {
             flexDirection: 'column',
           }}
         >
-          <img alt={'s'} src="http://localhost:3000/logo.png" width={100} height={16} />
+          <img alt={'logo'} src="https://platacard.github.io/logo.png" width={100} height={16} />
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h1
               style={{
