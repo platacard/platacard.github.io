@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group';
 import { VariantProps } from 'class-variance-authority';
+
+import { cn } from '@plata/utils';
 
 import { toggleVariants } from './toggle';
 

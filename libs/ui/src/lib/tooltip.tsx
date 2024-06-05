@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import * as TooltipPrimitive from '@radix-ui/react-tooltip';
+
+import { cn } from '@plata/utils';
 
 const TooltipProvider = TooltipPrimitive.Provider;
 

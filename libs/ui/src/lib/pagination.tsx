@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
+
+import { cn } from '@plata/utils';
 
 import { ButtonProps, buttonVariants } from './button';
 

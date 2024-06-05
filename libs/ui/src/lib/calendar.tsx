@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { DayPicker } from 'react-day-picker';
+
+import { cn } from '@plata/utils';
 
 import { buttonVariants } from './button';
 

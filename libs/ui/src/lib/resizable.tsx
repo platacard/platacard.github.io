@@ -1,7 +1,7 @@
-import { cn } from '@plata/utils';
-
 import { GripVertical } from 'lucide-react';
 import * as ResizablePrimitive from 'react-resizable-panels';
+
+import { cn } from '@plata/utils';
 
 const ResizablePanelGroup = ({
   className,

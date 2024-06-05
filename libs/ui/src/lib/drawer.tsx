@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import { Drawer as DrawerPrimitive } from 'vaul';
+
+import { cn } from '@plata/utils';
 
 const Drawer = ({
   shouldScaleBackground = true,

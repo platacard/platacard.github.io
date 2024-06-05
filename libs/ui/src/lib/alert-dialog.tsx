@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
+
+import { cn } from '@plata/utils';
 
 import { buttonVariants } from './button';
 

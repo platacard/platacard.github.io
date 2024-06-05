@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import * as LabelPrimitive from '@radix-ui/react-label';
 import { Slot } from '@radix-ui/react-slot';
@@ -11,6 +10,8 @@ import {
   FormProvider,
   useFormContext,
 } from 'react-hook-form';
+
+import { cn } from '@plata/utils';
 
 import { Label } from './label';
 

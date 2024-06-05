@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { Check, ChevronRight, Circle } from 'lucide-react';
+
+import { cn } from '@plata/utils';
 
 const DropdownMenu = DropdownMenuPrimitive.Root;
 

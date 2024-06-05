@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { cn } from '@plata/utils';
 
 import { OTPInput, OTPInputContext } from 'input-otp';
 import { Dot } from 'lucide-react';
+
+import { cn } from '@plata/utils';
 
 const InputOTP = React.forwardRef<
   React.ElementRef<typeof OTPInput>,
