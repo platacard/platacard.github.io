@@ -9,6 +9,30 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@plat
 import { ThemeModeToggle } from './_components/theme-provider/theme-mode-toggle';
 
 export default async function Component() {
+  const projects = [
+    {
+      name: 'platacard/mexo',
+      description: 'Simple and powerful Micro Frontends framework.',
+      url: 'https://github.com/platacard/mexo',
+    },
+    {
+      name: 'platacard/verity',
+      description:
+        'Verity is a service that allows you to create new versions of various applications and connect them to each other.',
+      url: 'https://github.com/platacard/verity',
+    },
+    {
+      name: 'platacard/terraform-provider-temporal',
+      description: 'Terraform provider to manage Temporal Server resources.',
+      url: 'https://github.com/platacard/terraform-provider-temporal',
+    },
+    {
+      name: 'platacard/terraform-provider-superset',
+      description: 'Terraform provider to manage Apache Superset Server resources.',
+      url: 'https://github.com/platacard/terraform-provider-superset',
+    },
+  ];
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center gap-4">
@@ -69,59 +93,27 @@ export default async function Component() {
               </p>
             </div>
             <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3">
-              <Card className="bg-card">
-                <CardHeader>
-                  <CardTitle>platacard/mexo</CardTitle>
-                  <CardDescription>Simple and powerful Micro Frontends framework.</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center space-x-2">
-                    <Button variant="secondary" size="sm" asChild>
-                      <Link
-                        href="https://github.com/platacard/mexo"
-                        prefetch={false}
-                        target="_blank"
-                      >
-                        <StarIcon className="mr-2 h-4 w-4" />
-                        Star
+              {projects.map((project) => (
+                <Card key={project.name} className="bg-card flex flex-col justify-between">
+                  <CardHeader>
+                    <CardTitle>{project.name}</CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex items-center space-x-2">
+                      <Button variant="secondary" size="sm" asChild>
+                        <Link href={project.url} prefetch={false} target="_blank">
+                          <StarIcon className="mr-2 h-4 w-4" />
+                          Star
+                        </Link>
+                      </Button>
+                      <Link href={project.url} target="_blank" prefetch={false}>
+                        View on GitHub
                       </Link>
-                    </Button>
-                    <Link href="https://github.com/platacard/mexo" target="_blank" prefetch={false}>
-                      View on GitHub
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>platacard/verity</CardTitle>
-                  <CardDescription>
-                    Verity is a service that allows you to create new versions of various
-                    applications and connect them to each other.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center space-x-2">
-                    <Button variant="secondary" size="sm" asChild>
-                      <Link
-                        href="https://github.com/platacard/verity"
-                        prefetch={false}
-                        target="_blank"
-                      >
-                        <StarIcon className="mr-2 h-4 w-4" />
-                        Star
-                      </Link>
-                    </Button>
-                    <Link
-                      href="https://github.com/platacard/verity"
-                      target="_blank"
-                      prefetch={false}
-                    >
-                      View on GitHub
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
             <div className="mt-20 text-center">
               <p className="text-lg text-foreground/80">
