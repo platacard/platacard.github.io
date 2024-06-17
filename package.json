@@ -73,7 +73,7 @@
     "@nx/eslint-plugin": "19.1.1",
     "@nx/jest": "19.1.1",
     "@nx/js": "19.1.1",
-    "@nx/next": "19.1.1",
+    "@nx/next": "19.3.0",
     "@nx/playwright": "19.1.1",
     "@nx/react": "19.1.1",
     "@nx/workspace": "19.1.1",
